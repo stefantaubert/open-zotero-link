@@ -19,6 +19,13 @@ Then go to *Tools -> Zutilo Settings -> Shortcuts -> Copy select item links -> C
 
 ## To start it
 
-`python main.py --zotero="path to zotero" --profile="profile name"`
+`python3 main.py --zotero="path to zotero" --profile="profile name"`
 
 The copied item link will only be opened if you have a linebreak at the end to prevent open the link if you copy it from zotero to your destination.
+
+## To install requirements on Qubes OS fedora-30 template:
+
+```
+sudo dnf install xsel -y
+pip3 install pyperclip==1.8.0
+```
